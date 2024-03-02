@@ -7,18 +7,25 @@ using System.Threading.Tasks;
 
 namespace TypeCodeIt11.Logic.Models
 {
-    public  class Post
+    public  class Comment
     {
-        [JsonPropertyName("id")]
+        [JsonPropertyName("postId")]
+        public int PostId { get; set; }
+        [JsonPropertyName("id")] 
         public int Id { get; set; }
-        
-        [JsonPropertyName("userId")]
-        public int UserId { get; set; }
-       
-        [JsonPropertyName("title")]
-        public string Tittle { get; set; }
-        
+
+        [JsonPropertyName("name")]
+        public string Name { get; set; }
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
         [JsonPropertyName("body")]
         public string Body { get; set; }
+
+
+
+
+
+
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace HTTPClientTest.Models
+namespace TypeCodeIt11.Logic.Models
 {
     public class Geo
     {

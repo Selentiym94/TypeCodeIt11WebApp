@@ -7,18 +7,19 @@ using System.Threading.Tasks;
 
 namespace TypeCodeIt11.Logic.Models
 {
-    public  class Post
+    public class Note
     {
-        [JsonPropertyName("id")]
-        public int Id { get; set; }
-        
         [JsonPropertyName("userId")]
-        public int UserId { get; set; }
-       
+        public string UserId { get; set; }
+
+        [JsonPropertyName("id")]
+        public string Id { get; set; }
+
         [JsonPropertyName("title")]
-        public string Tittle { get; set; }
-        
-        [JsonPropertyName("body")]
-        public string Body { get; set; }
+        public string Title { get; set; }
+
+        [JsonPropertyName("completed")]
+        public bool Completed { get; set; }
+
     }
 }
