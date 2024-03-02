@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPClientTest", "HTTPClientTest\HTTPClientTest.csproj", "{65ABA45E-29A2-4090-AE0F-00D791C2D19F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeCodeIt11.Logic", "HTTPClientTest\TypeCodeIt11.Logic.csproj", "{65ABA45E-29A2-4090-AE0F-00D791C2D19F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
