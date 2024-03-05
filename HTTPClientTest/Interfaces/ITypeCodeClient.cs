@@ -12,6 +12,7 @@ namespace TypeCodeIt11.Logic.Interfaces
     public interface ITypeCodeClient
     {
         Task<List<User>> GetUsers(string name);
+        Task<List<Post>> GetPost (int userID);
 
     }
 }

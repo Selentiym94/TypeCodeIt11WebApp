@@ -1,12 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using TypeCodeIt11.Logic.Interfaces;
 using TypeCodeIt11.Logic.Models;
+using TypeCodeIt11.Logic.Models.Requests;
+
 
 namespace TypeCodeIt11.Logic.Processors
 {
@@ -18,9 +21,10 @@ namespace TypeCodeIt11.Logic.Processors
             _baseUrl = baseUrl;
         }
         
-        public List<User> GetUsers(string name)
+        public async Task <List<User>> GetUsers(string name)
         {
-            throw new NotImplementedException();
+            IRequestData data = new GetUserRequest(name);
+            return await GetData<User>(data);
         }
         private async Task<List<TType>> GetData<TType>(IRequestData data)
         {
@@ -36,6 +40,11 @@ namespace TypeCodeIt11.Logic.Processors
                 }
             }
             return new List<TType>();
+
+
+
+
+
         }
     }
 }
