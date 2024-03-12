@@ -1,10 +1,4 @@
-﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TypeCodeIt11.Logic.Models;
+﻿using TypeCodeIt11.Logic.Models;
 
 
 namespace TypeCodeIt11.Logic.Interfaces
@@ -13,6 +7,7 @@ namespace TypeCodeIt11.Logic.Interfaces
     {
         Task<List<User>> GetUsers(string name);
         Task<List<Post>> GetPost (int userID);
+        Task<List<Comment>> GetComments(int postId);
 
     }
 }
