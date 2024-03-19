@@ -7,11 +7,11 @@ using TypeCodeIt11.Logic.Interfaces;
 
 namespace TypeCodeIt11.Logic.Models.Requests
 {
-    public class GetCommentsRequest : IRequestData
+    public class GetCommentRequest : IRequestData
     {
         public int PostId { get; set; }
 
-        public GetCommentsRequest(int postId)
+        public GetCommentRequest(int postId)
         {
             PostId = postId;
         }
