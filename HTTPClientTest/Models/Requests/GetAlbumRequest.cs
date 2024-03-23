@@ -9,19 +9,19 @@ namespace TypeCodeIt11.Logic.Models.Requests
 {
     public class GetAlbumRequest : IRequestData
     {
-        public int UsertId { get; set; }
+        public int UserId { get; set; }
 
-        public GetAlbumRequest(int usertId)
+        public GetAlbumRequest(int userId)
         {
-            UsertId = usertId;
+            UserId = userId;
         }
 
         public string GetData()
         {
             string result = "albums";
-            if (UsertId > 0)
+            if (UserId > 0)
             {
-                result += $"?userId={UsertId}";
+                result += $"?userId={UserId}";
             }
             return result;
         }
