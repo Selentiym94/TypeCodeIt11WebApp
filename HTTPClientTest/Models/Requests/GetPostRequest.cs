@@ -19,10 +19,10 @@ namespace TypeCodeIt11.Logic.Models.Requests
 
         public string GetData()
         {
-            string result = "post";
+            string result = "posts";
             if (UserId > 0)
             {
-                result += $"userId={UserId}";   
+                result += $"?userId={UserId}";   
             }
             return result;
             

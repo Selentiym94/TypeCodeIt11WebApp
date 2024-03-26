@@ -28,7 +28,7 @@ namespace TypeCodeIt11.Logic.Processors
 
         public async Task<List<Photo>> GetPhotos(int albumId)
         {
-            IRequestData data = new GetPostRequest(albumId);
+            IRequestData data = new GetPhotoRequest(albumId);
             return await GetData<Photo>(data);
         }
 

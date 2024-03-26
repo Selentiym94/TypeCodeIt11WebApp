@@ -4,19 +4,19 @@ namespace TypeCodeIt11.Logic.Models.Requests
 {
     public class GetPhotoRequest : IRequestData
     {
-        public GetPhotoRequest(int albutId)
+        public GetPhotoRequest(int albumId)
         {
-                AlbutId = albutId;
+                AlbumId = albumId;
         }
-        public int AlbutId { get; set; }
+        public int AlbumId { get; set; }
 
 
         public string GetData()
         {
             string result = "photos";
-            if (AlbutId > 0)
+            if (AlbumId > 0)
             {
-                result += $"?albumId={AlbutId}";
+                result += $"?albumId={AlbumId}";
             }
             return result;
         }

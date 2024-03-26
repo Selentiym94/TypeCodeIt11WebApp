@@ -6,8 +6,8 @@ namespace TypeCodeIt11.Logic.Processors
     public class TypeCodeDataProcessor
     {
         private readonly ITypeCodeClient _client;
-(ITypeCodeClient clien
-        public TypeCodeDataProcessort)
+
+        public TypeCodeDataProcessor(ITypeCodeClient client)
         {
             _client = client;
         }

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TypeCodeIt11.Logic.Models;
 using TypeCodeIt11.Logic.Processors;
+using TypeCodeIt11.WepApp.Requests;
 
 namespace TypeCodeIt11.WepApp.Controllers
 {
@@ -15,10 +16,10 @@ namespace TypeCodeIt11.WepApp.Controllers
                 _dataProcessor = dataProcessor;
         }
 
-        [HttpGet("get")]
-        public async Task<IActionResult> GetUserData(string userName) 
+        [HttpPost("get")]
+        public async Task<IActionResult> GetUserData([FromBody]GetUserByNameRequest userName) 
         {
-            TypeCodeData result = await _dataProcessor.Get(userName);
+            TypeCodeData result = await _dataProcessor.Get(userName.Name);
             return Ok(result);  
         }
     }

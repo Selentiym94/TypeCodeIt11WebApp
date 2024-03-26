@@ -10,10 +10,10 @@ namespace TypeCodeIt11.Logic.Models
     public class Note
     {
         [JsonPropertyName("userId")]
-        public string UserId { get; set; }
+        public int UserId { get; set; }
 
         [JsonPropertyName("id")]
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [JsonPropertyName("title")]
         public string Title { get; set; }

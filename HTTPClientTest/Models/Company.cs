@@ -6,7 +6,7 @@ namespace TypeCodeIt11.Logic.Models
     {
         [JsonPropertyName("name")]
         public string Name { get; set; }
-        [JsonPropertyName("catchphrase")]
+        [JsonPropertyName("catchPhrase")]
         public string CatchPhrase { get; set; }
         [JsonPropertyName("bs")]
         public string Bs {  get; set; }

@@ -18,7 +18,12 @@ namespace TypeCodeIt11.Logic.Models.Requests
 
         public string GetData()
         {
-            throw new NotImplementedException();
+            string result = "comments";
+            if (PostId > 0)
+            {
+                result += $"?postId={PostId}";
+            }
+            return result;
         }
     }
 }
